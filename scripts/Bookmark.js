@@ -14,10 +14,8 @@ const Bookmark = (function(){
       extended: false,
     };
   };
-
   return {
     create,
   };
-
 }());
 
