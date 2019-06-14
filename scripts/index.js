@@ -4,12 +4,12 @@
 /* global bookmarkList, store, api, Bookmark*/
 
 $(document).ready(function(){
-  bookmarkList.bindEventListeners();
-  bookmarkList.render();
+  bookmark_list.bindEventListeners();
+  bookmark_list.render();
   api.get_bookmarks()
     .then(res => res.json())
     .then(data => {
       data.forEach(bookmark => store.addBookmark(bookmark));
-      bookmarkList.render();
+      bookmark_list.render();
     });
 });
