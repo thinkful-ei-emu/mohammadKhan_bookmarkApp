@@ -14,8 +14,18 @@ const Bookmark = (function(){
       extended: false,
     };
   };
+
+  const validate_bookmark =  function(title, url, desc, rating){// error checking
+    if(title === null || title === ' '){
+      throw new TypeError('Title cannot be empty');
+    }
+    if(url === null || url === ' '){
+      throw new TypeError('URL cannot be empty');
+    }    
+  };
   return {
     create,
+    validate_bookmark,
   };
 }());
 

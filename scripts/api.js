@@ -9,12 +9,12 @@ const api = (function(){
     return fetch (`${baseUrl}bookmarks`);
   }
 
-  function add_bookmarks(title, url, description, rating){
+  function add_bookmarks(title, url, desc, rating){
     //making a request body so we can call the api
     const body = JSON.stringify({ //create ajax object using the input value that user wil be providing us with, and convert into JSON string
       title: title,
       url: url,
-      description: description,
+      desc: desc,
       rating: rating,
     });
     
