@@ -56,7 +56,7 @@ const bookmark_list = (function (){
 
   function generate_star(val){
     let value= '';
-    for(let i = 0; i <= val; i ++){
+    for(let i = 1; i <= val; i ++){
       value += ('<i class="fa fa-star" aria-hidden="true"></i>');
     }
     return value;
